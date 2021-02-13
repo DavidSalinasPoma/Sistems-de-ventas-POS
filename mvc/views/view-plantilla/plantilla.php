@@ -35,10 +35,29 @@
     include __DIR__ . './../shared/header.php';
     // Barra lateral de admin
     include __DIR__ . './../shared/asside.php';
+
+
     // Content de la App ventas
-    include __DIR__ . './../shared/content.php';
+    // Si viene una variable get llamada ruta
+    if (isset($_GET["ruta"])) {
+      // Y esa varible get ruta tienen un  valor
+      if (
+        $_GET["ruta"] == "inicio" ||
+        $_GET["ruta"] == "usuarios" ||
+        $_GET["ruta"] == "categorias" ||
+        $_GET["ruta"] == "productos" ||
+        $_GET["ruta"] == "clientes" ||
+        $_GET["ruta"] == "ventas" ||
+        $_GET["ruta"] == "crear-ventas" ||
+        $_GET["ruta"] == "reportes"
+      ) {
+        // Entonces ingresamos a esa ruta
+        include __DIR__ . "./../shared/" . $_GET["ruta"] . ".php";
+      }
+    }
     // Footer del admin
     include __DIR__ . './../shared/footer.php';
+
     ?>
 
 
@@ -55,6 +74,7 @@
   <script src="mvc/views/view-plantilla/dist/js/adminlte.min.js"></script>
   <!-- Js customizado -->
   <script src="mvc/views/js/plantilla.js"></script>
+
   <!--=========================== END OF de JavaScript ===========================-->
 
 

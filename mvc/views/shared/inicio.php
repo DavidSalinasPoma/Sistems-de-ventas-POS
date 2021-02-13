@@ -4,13 +4,14 @@
      <section class="content-header">
          <div class="container-fluid">
              <div class="row mb-2">
-                 <div class="col-sm-6">
-                     <h1>Blank Page</h1>
+                 <div class="col-sm-6 d-flex">
+                     <h1>Pagina de Inicio</h1>
+                     <span class="ml-2 align-self-end"><small>Panel de Control</small></span>
                  </div>
                  <div class="col-sm-6">
                      <ol class="breadcrumb float-sm-right">
-                         <li class="breadcrumb-item"><a href="#">Home</a></li>
-                         <li class="breadcrumb-item active">Blank Page</li>
+                         <li class="breadcrumb-item"><a href="#"><i class="fas fa-tachometer-alt mr-2 text-black-50"></i>Inicio</a></li>
+                         <li class="breadcrumb-item active">Tablero</li>
                      </ol>
                  </div>
              </div>

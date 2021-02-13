@@ -1,8 +1,28 @@
 .htaccess.-Permite proteger las carpetas del directorio y crea las urls amigables.
+--Options All -Indexes  -> Oculta todas las carpetas del proyecto
+ de tal forma que ningun usuario podra entran a travez de la url.
+
+ --RewriteEngine On  ->  Utilizacion de urls amigables.
+
+ --RewriteRule ^([-a-zA-Z0-9/]+)$ index.php?ruta=$1   -> Son urls amigables
+
+
 
 Puntos de quiebre de pantalla
 
 Movil 320 px.
 Tablet Portrait 768 px (Vertical)
 Table Landscape 1024 px (Horizontal)
-escritorio 1366 px
+escritorio 1366 pxç
+
+
+vista -> controlador -> modelo
+
+c reate
+r ead
+u pdate
+d elete
+
+Cuando se esta haciendo un crud
+Se esta haciendo un GESTOR
+entonces se esta haciendo un GESTOR-USUARIOS
