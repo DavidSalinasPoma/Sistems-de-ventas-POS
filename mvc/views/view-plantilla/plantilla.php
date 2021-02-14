@@ -53,7 +53,11 @@
       ) {
         // Entonces ingresamos a esa ruta
         include __DIR__ . "./../shared/" . $_GET["ruta"] . ".php";
+      } else {
+        include __DIR__ . './../shared/404.php';
       }
+    } else { // Si no viene una variable get Que muestre INICIO por defecto
+      include __DIR__ . './../shared/inicio.php';
     }
     // Footer del admin
     include __DIR__ . './../shared/footer.php';
