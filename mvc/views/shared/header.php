@@ -31,7 +31,7 @@
                     </div>
                 </div>
                 <div class="user-footer" style="background-color: #f9f9f9;">
-                    <a class="">
+                    <a href="salir" class="">
                         <div class="d-flex justify-content-end p-3">
                             <button type="button" class="btn btn-default btn-flat">Cerrar sesión</button>
                         </div>
